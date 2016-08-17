@@ -1,0 +1,273 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+		<style>
+			body{
+				background:#e8e8e8;
+			}
+			.box {
+			  border-radius: 5px;
+			  background-color: #fff;
+			  box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+			  text-align: center;
+			}
+
+			.outerBox {
+			  padding: 10px 10px 30px;
+			  max-width: 650px;
+			  min-width:650px;
+			  margin:auto;
+			  margin-top:40px;
+			}
+
+			header h1 {
+			  color: #515151;
+			  background: #fff;
+			  font: 24px/1.714 "Roboto", sans-serif;
+			}
+
+			.formHolder {
+			  padding: 22px 0;
+			}
+
+			.formHolder form {
+				max-width: 550px;
+			  min-width:550px;
+			  margin:auto;
+			  border: 1px solid #e0e0e0;
+			  padding: 22px 0;
+			  box-sizing: border-box;
+			  color: rgb(81, 81, 81);
+			  display: block;
+			  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			  font-size: 14px;
+			  font-style: normal;
+			  font-weight: normal;
+			  ;
+			  line-height: 23.996px;
+			  margin-bottom: 0px;
+			  margin-left: 53.5px;
+			  margin-right: 53.5px;
+			  margin-top: 0px;
+			  max-height: 1e+06px;
+			  padding-bottom: 30px;
+			  padding-left: 100px;
+			  padding-right: 50px;
+			  padding-top: 36px;
+			  text-align: left;
+			  -webkit-font-smoothing: antialiased;
+			}
+
+			.formHolder form input[type="text"] {
+			  background-attachment: scroll;
+			  background-clip: border-box;
+			  background-color: rgba(0, 0, 0, 0);
+			  background-origin: padding-box;
+			  background-position: 98% 50%;
+			  background-repeat: no-repeat;
+			  background-size: 16px 18px;
+			  border-bottom-color: rgb(164, 164, 166);
+			  border-bottom-left-radius: 3px;
+			  border-bottom-right-radius: 3px;
+			  border-bottom-style: solid;
+			  border-bottom-width: 1px;
+			  border-image-outset: 0px;
+			  border-image-repeat: stretch;
+			  border-image-slice: 100%;
+			  border-image-source: none;
+			  border-image-width: 1;
+			  border-left-color: rgb(164, 164, 166);
+			  border-left-style: solid;
+			  border-left-width: 1px;
+			  border-right-color: rgb(164, 164, 166);
+			  border-right-style: solid;
+			  border-right-width: 1px;
+			  border-top-color: rgb(164, 164, 166);
+			  border-top-left-radius: 3px;
+			  border-top-right-radius: 3px;
+			  border-top-style: solid;
+			  border-top-width: 1px;
+			  box-shadow: none;
+			  box-sizing: border-box;
+			  color: rgb(81, 81, 81);
+			  cursor: auto;
+			  display: inline-block;
+			  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			  font-size: 14px;
+			  font-stretch: normal;
+			  font-style: normal;
+			  font-variant-caps: normal;
+			  font-variant-ligatures: normal;
+			  font-variant-numeric: normal;
+			  font-weight: bold;
+			  height: 48.2188px;
+			  letter-spacing: normal;
+			  line-height: 16px;
+			  margin-bottom: 0px;
+			  margin-left: 0px;
+			  margin-right: 0px;
+			  margin-top: 10px;
+			  max-height: 1e+06px;
+			  outline-color: rgb(81, 81, 81);
+			  outline-style: none;
+			  outline-width: 0px;
+			  padding-bottom: 15.12px;
+			  padding-left: 15.12px;
+			  padding-right: 15.12px;
+			  padding-top: 15.12px;
+			  text-align: start;
+			  text-indent: 0px;
+			  text-rendering: auto;
+			  text-shadow: none;
+			  text-transform: none;
+			  width: 345px;
+			  word-spacing: 0px;
+			  writing-mode: horizontal-tb;
+			  -webkit-appearance: none;
+			  -webkit-font-smoothing: antialiased;
+			  -webkit-rtl-ordering: logical;
+			  -webkit-user-select: text;
+			}
+
+			.formHolder form input[type="submit"] {
+			  align-items: flex-start;
+			  background-attachment: scroll;
+			  background-clip: border-box;
+			  background-color: rgb(47, 173, 114);
+			  background-image: none;
+			  background-origin: padding-box;
+			  background-size: auto;
+			  border-bottom-color: rgb(12, 150, 116);
+			  border-bottom-left-radius: 4px;
+			  border-bottom-right-radius: 4px;
+			  border-bottom-style: solid;
+			  border-bottom-width: 1px;
+			  border-image-outset: 0px;
+			  border-image-repeat: stretch;
+			  border-image-slice: 100%;
+			  border-image-source: none;
+			  border-image-width: 1;
+			  border-left-color: rgb(12, 150, 116);
+			  border-left-style: solid;
+			  border-left-width: 1px;
+			  border-right-color: rgb(12, 150, 116);
+			  border-right-style: solid;
+			  border-right-width: 1px;
+			  border-top-color: rgb(12, 150, 116);
+			  border-top-left-radius: 4px;
+			  border-top-right-radius: 4px;
+			  border-top-style: solid;
+			  border-top-width: 1px;
+			  box-shadow: rgba(0, 0, 0, 0.0784314) 0px 5px 5px 0px, rgba(255, 255, 255, 0.341176) 0px 1px 1px 0px inset;
+			  box-sizing: border-box;
+			  color: rgb(255, 255, 255);
+			  cursor: pointer;
+			  display: block;
+			  font-family: MuseoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+			  font-size: 20px;
+			  font-stretch: normal;
+			  font-style: normal;
+			  font-variant-caps: normal;
+			  font-variant-ligatures: normal;
+			  font-variant-numeric: normal;
+			  font-weight: bold;
+			  height: 72px;
+			  letter-spacing: normal;
+			  line-height: 24px;
+			  margin-bottom: 10px;
+			  margin-left: 0px;
+			  margin-right: 0px;
+			  margin-top: 0px;
+			  max-height: 1e+06px;
+			  opacity: 1;
+			  outline-color: rgb(255, 255, 255);
+			  outline-style: none;
+			  outline-width: 0px;
+			  overflow-x: visible;
+			  overflow-y: visible;
+			  padding-bottom: 20px;
+			  padding-left: 20px;
+			  padding-right: 20px;
+			  padding-top: 20px;
+			  text-align: center;
+			  text-indent: 0px;
+			  text-rendering: auto;
+			  text-shadow: none;
+			  text-transform: none;
+			  width: 345px;
+			  word-spacing: 0px;
+			  writing-mode: horizontal-tb;
+			  -webkit-appearance: none;
+			}
+
+		</style>
+
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script> 
+
+		<script type = "text/javascript">
+		  $(document).ready(
+		    function() {
+		      function GetURLParameter(sParam) {
+		        var sPageURL = window.location.search.substring(1);
+		        var sURLVariables = sPageURL.split('&');
+		        for (var i = 0; i < sURLVariables.length; i++) {
+		          var sParameterName = sURLVariables[i].split('=');
+		          if (sParameterName[0] == sParam) {
+		            return sParameterName[1];
+		          }
+		        }
+		    };
+		    
+		       var currentAnswerKey = GetURLParameter('wpvqresults');
+		       alert(currentAnswerKey);
+		       $("input[name='custom_wpvqresults']").val(currentAnswerKey);
+		  }
+		  );
+      	</script>
+
+	</head>
+	<body>
+		<div class="box outerBox">
+		  <header>
+		    <h1>Congratulations!....</h1>
+		    <img src="giftIcon.png" height="100px" width="100px" align="left">
+		    <h1> Based on your answers, you also qualified for a <strong>free gift!</strong> </h1><br/>
+
+		    <h1> Enter your details below to see your results and also see your free gift </h1>
+		    <p></p>
+		  </header>
+		  <div class="formHolder">
+		    <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
+		      <!-- Last name -->
+
+		      <b>Name </b>
+		      <br/>
+		      <input type="text" name="last_name" />
+		      <br/>
+		      <br/>
+		      <br/>
+		      <!-- Email field (required) -->
+		      <b>Email Address</b>
+		      <br/>
+		      <input type="text" name="email" />
+		      <br/>
+		      <br/>
+		      <br/>
+		      <input name="custom_wpvqresults" type="hidden" value="" />
+		      <!-- Campaign token -->
+		      <!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+		      <input type="hidden" name="campaign_token" value="nQkoy" />
+		      <!-- Thank you page (optional) -->
+		      <input type="hidden" name="thankyou_url" value="http://simonstelz.com/quiz/organizationQuiz/output.html" />
+		      <!-- Forward form data to your page (optional) -->
+		      <input type="hidden" name="forward_data" value="get" />
+		      <!-- Subscriber button -->
+		      <input type="submit" value="See Results & Claim Gift" />
+		    </form>
+
+		  </div>
+		</div>
+	</body>
+
+<html>
