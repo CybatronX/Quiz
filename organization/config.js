@@ -20,7 +20,7 @@ var leadGen =
 // Result Page
 var result = 
 		{
-		postScript: "<p><strong><span style='color: red; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 15px; line-height: 22.5px; background-color: rgb(244, 244, 244);'>P.S: As a thank you for taking this quiz, we have a special gift for you in partnership with Amazon Promotions.</span></strong></p>",
+		postScript: "<p><strong><span style='color: red; font-family: &quot;Open Sans&quot;, sans-serif; font-size: 15px; line-height: 22.5px; background-color: rgb(244, 244, 244);'>P.S: As a thank you for taking this quiz, we have a special gift for you in partnership with Amazon Promotions. Click the button below to see your gift</span></strong></p>",
 		freeGiftForm: "http://simonstelz.com/8-pack-promo/",
 		freeGiftFormText: "Yes, Show Me My Gift",
 		quizOutputs: [
