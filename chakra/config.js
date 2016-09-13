@@ -13,7 +13,7 @@ var start =
 var leadGen = 
 		{
 		campaignToken: "nFMKK",
-		thankYouURL: "http://internationalhealthandwellnessassociation.com/Quiz/chakra/result/result.html",
+		thankYouURL: "http://internationalhealthandwellnessassociation.com/2016/09/13/quiz-most-dominant-chakra-quizresult/",
 		};
 
 
