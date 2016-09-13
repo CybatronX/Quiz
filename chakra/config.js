@@ -5,15 +5,15 @@ var start =
 		header1: "<h1 style='color: #ff0000;''><span style='font-family: arial, helvetica, sans-serif; font-size: x-large;'>What is your strongest chakra?</span></h1>",
 		header2: "Ever wondered what your strongest chakra is? Well you've come to the right place! Take this short quiz and find out!",
 		heroImageURL: "http://cdn.playbuzz.com/cdn/fdfc9b16-66c7-434c-85ba-88b9e74f3cb0/ef009377-2c1f-4f2e-874b-66866892a760_560_420.jpg",
-		quizURL: "http://simonstelz.com/chakra/",
+		quizURL: "http://internationalhealthandwellnessassociation.com/chakra/",
 		};
 
 // Lead Gen Page
 
 var leadGen = 
 		{
-		campaignToken: "nMmav",
-		thankYouURL: "http://simonstelz.com/quiz/chakra/result/result.html",
+		campaignToken: "nFMKK",
+		thankYouURL: "http://internationalhealthandwellnessassociation.com/Quiz/chakra/result/result.html",
 		};
 
 
